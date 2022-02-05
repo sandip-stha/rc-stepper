@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.verify-page {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  padding: 50px;
+}
+.react-wizard {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px 25px;
+}
+.react-wizard-header {
+  padding: 20px;
+}
+.react-wizard-header h2 {
+  color: #444;
+  /*font-weight: 500;*/
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form-check-label .form-check-input {
+  margin-left: -1rem;
+}
+.form-group label {
+  font-size: 15px;
+}
+.react-wizard-footer {
+  display: flex;
+  padding: 20px 0 10px 0;
+  justify-content: space-between;
+}
+.react-wizard-footer .btn-control {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #444;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.react-wizard-footer .btn-control:disabled {
+  border-color: #ddd;
+  color: #ccc;
+  cursor: not-allowed;
+}
+.react-wizard-footer .btn-control:not(:disabled):hover {
+  background-color: #fafafa;
+}
+.react-wizard-footer .btn-submit {
+  background-color: #1abc9c;
+  border-radius: 2px;
+  color: #fff;
+  border-color: #1abc9c;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.doc-upload-area {
+  display: block;
+}
+.upload-btn {
+  margin-left: 10px;
+}
+.upload-btn input {
+  display: none;
+}
+.upload-btn label {
+  background-color: #e67e22;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: lighter;
+  padding: 8px 16px;
+}
+.upload-btn label:hover {
+  background-color: #e38b3f;
+}
+.upload-btn label:active {
+  background-color: #ce701f;
+}
+.selfie-btn {
+  background-color: #e67e22;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: lighter;
+  margin-left: 10px;
+  padding: 8px 16px;
+}
+.selfie-btn:not(:disabled):hover {
+  background-color: #e38b3f;
+}
+.selfie-btn:not(:disabled):active {
+  background-color: #ce701f;
+}
+.snapshot-btn {
+  background-color: #2980b9;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: lighter;
+  margin-left: 10px;
+  padding: 8px 16px;
+}
+.snapshot-btn:not(:disabled):hover {
+  background-color: #3498db;
+}
+.snapshot-btn:not(:disabled):active {
+  background-color: #2272a6;
+}
+.selfie-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.snapshot-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.upload-legend {
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 0px;
+  color: #777;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin: 0 0 30px 0;
+  padding: 20px 15px;
+  justify-content: center;
+}
+.upload-legend span {
+  text-align: center;
+}
+.upload-file-example {
+  margin: 20px auto;
+  max-width: 400px;
+  width: 100%;
+}
+.upload-file-example img {
+  width: 100%;
+}
+.upload-file-example figcaption {
+  color: #777;
+  font-size: 14px;
+  padding: 4px;
+  text-align: center;
+}
+.selfie-area {
+  margin: 20px auto;
+  max-width: 400px;
+  width: 100%;
+}
+.selfie-area .selfie-preview {
+  background-color: #f9f9f9;
+  background-image: url('http://wayfaringbroad.com/images/Icons/instagram-grey.png');
+  background-size: 50% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px dashed #ccc;
+  height: 260px;
+  width: 100%;
+}
+.selfie-area p {
+  color: #777;
+  font-size: 14px;
+  padding: 4px;
+  text-align: center;
+}
+.points {
+  background-color: #eee;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 12px;
+}
+.points .check {
+  align-items: center;
+  display: inline-flex;
+}
+.points .check i {
+  color: #2ecc71;
+}
+.points .check:not(:first-of-type) {
+  margin-left: 20px;
+}
+.points .check p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-left: 8px !important;
+}
+hr {
+  width: 100%;
+}
+.slider {
+  padding: 40px 0;
+}
+.Select.is-open .Select-control {
+  border-radius: 0 0 4px 4px;
+}
+.Select-menu-outer {
+  border-radius: 4px 4px 0 0;
+  max-height: -180px !important;
+  top: -180px !important;
+}
+.Select-menu {
+  max-height: 180px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .react-wizard {
+    padding: 30px 40px;
+  }
+  .react-wizard .upload-file-example,
+  .react-wizard .selfie-area {
+    margin: 40px auto;
+  }
+}
